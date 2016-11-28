@@ -2,12 +2,19 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { BmrDisplayComponent } from './bmr-display/bmr-display.component';
+import { makeStore } from './redux/store';
 
 describe('AppComponent', () => {
+
+  let statStore = makeStore();
+
   beforeEach(() => {
     TestBed.configureTestingModule({
+      providers: [{provide: 'statStore', useValue: statStore }],
       declarations: [
-        AppComponent
+        AppComponent,
+        BmrDisplayComponent
       ],
     });
   });

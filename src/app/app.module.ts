@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { BmrDisplayComponent } from './bmr-display/bmr-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BmrDisplayComponent
   ],
   imports: [
     BrowserModule,
