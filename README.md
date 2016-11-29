@@ -1,8 +1,37 @@
-# TelerikRedux
+# Telerik Redux Angular 2 Health App 
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
+Authored by [@JeremyLikness](https://twitter.com/jeremylikness). 
+
+## Quick start 
+
+### Associate the Progress repository (requires a Telerik login)
+
+### Clone the repo 
+
+### Install dependencies 
+
+### Quick run (Angular-CLI)
+
+`ng serve`
+
+### Quick run (Docker)
+
+This will build an image, run it, and open the browser to the running app: 
+
+`npm run-script docker-start` 
+
+This will stop and remove the container: 
+
+`npm run-script docker-stop` 
+
+This will stop, remove the container, and remove the image: 
+
+`npm run-script docker-cleanup` 
+
 ## Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
@@ -29,3 +58,4 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
