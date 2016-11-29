@@ -1,0 +1,6 @@
+<div>
+  <h2>Gender:</h2>
+  <kendo-switch [(ngModel)]="isFemale" [onLabel]="'F'" [offLabel]="'M'"></kendo-switch>
+  <span *ngIf="isFemale">Female</span>
+  <span *ngIf="!isFemale">Male</span>
+</div>

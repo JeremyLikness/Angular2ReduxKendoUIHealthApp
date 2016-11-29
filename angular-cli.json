@@ -18,7 +18,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/@progress/kendo-angular-inputs/dist/npm/css/main.css"
       ],
       "scripts": [],
       "environments": {

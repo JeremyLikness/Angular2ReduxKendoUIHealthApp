@@ -1,0 +1,10 @@
+:host {
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+
+hr {
+    clear: both;
+    color: lightgray;
+    background-color: lightgray;
+    height: 1px;
+}

@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
+
+div.obese {
+    border: solid 2px red;
+    background: lightcoral;
+}
+
+div.overweight {
+    border: solid 2px darkorange;
+    background: lightyellow;
+}
+
+div.normal {
+    border: solid 2px darkgreen;
+    background: lightgreen;
+}
+
+div.underweight {
+    border: solid 2px black; 
+    background: orange;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+
+

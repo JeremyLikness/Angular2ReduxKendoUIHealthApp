@@ -2,7 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 
 import { Store } from 'redux';
 
-import { Stats } from '../redux/stats';
+import { STAT_STORE } from '../state/store';
+
+import { Stats } from '../state/stats';
 
 @Component({
   selector: 'app-bmr-display',
@@ -13,7 +15,7 @@ export class BmrDisplayComponent implements OnInit {
 
   public bmr: number = 0;
 
-  constructor(@Inject('statStore')private statStore: Store<Stats>) { }
+  constructor(@Inject(STAT_STORE)private statStore: Store<Stats>) { }
 
   ngOnInit() {
     this.bmr = this.statStore.getState().bmr;

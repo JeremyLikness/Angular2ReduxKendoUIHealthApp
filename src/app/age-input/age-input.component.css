@@ -1,0 +1,15 @@
+div {
+    float: left;
+    margin: 5px;
+    text-align: center;
+    width: 180px;
+}
+
+input {
+    width: 80px;
+}
+
+input.ng-invalid {
+    border: solid 2px red;
+    color: darkred;
+}

@@ -7,11 +7,11 @@ import { Store } from 'redux';
 
 import { BmrDisplayComponent } from './bmr-display.component';
 
-import { makeStore } from '../redux/store';
+import { makeStore, STAT_STORE } from '../state/store';
 
-import { changeAge } from '../redux/actions';
+import { changeAge } from '../state/actions';
 
-import { DEFAULT_STAT, Stats } from '../redux/stats';
+import { DEFAULT_STAT, Stats } from '../state/stats';
 
 describe('BmrDisplayComponent', () => {
   let component: BmrDisplayComponent;
@@ -20,7 +20,7 @@ describe('BmrDisplayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      providers: [{provide: 'statStore', useValue: statStore }],
+      providers: [{provide: STAT_STORE, useValue: statStore }],
       declarations: [ BmrDisplayComponent ]
     })
     .compileComponents();
