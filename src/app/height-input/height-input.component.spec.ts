@@ -9,6 +9,10 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 
 import { makeStore, STAT_STORE } from '../state/store';
 
+import { Stats, DEFAULT_STAT } from '../state/stats';
+
+import { changeHeight } from '../state/actions';
+
 import { HeightTextPipe } from './height-text.pipe';
 
 import { HeightInputComponent } from './height-input.component';
@@ -36,4 +40,14 @@ describe('HeightInputComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initialize the height', () => {
+    expect(component.height).toEqual((<Stats><any>DEFAULT_STAT).heightInches);
+  });
+
+  it('should update height on changes', () => {
+    component.height = 60;
+    expect(component.height).toEqual(store.getState().heightInches);
+  });
+
 });

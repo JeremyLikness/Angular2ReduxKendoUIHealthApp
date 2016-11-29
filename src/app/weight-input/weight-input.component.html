@@ -1,3 +1,13 @@
-<p>
-  weight-input works!
-</p>
+<div>
+  <h2>Lbs (80-500):</h2>
+  <form>
+    <input [(ngModel)]="weight" 
+      type="number" 
+      min="80"
+      max="500"
+      placeholder="Weight: 80 - 500" 
+      name="weightInput"
+      pattern="^(0?[8-9][0-9]|[1-4][0-9][0-9]|500)$"
+      required/> lbs.
+  </form> 
+</div>
