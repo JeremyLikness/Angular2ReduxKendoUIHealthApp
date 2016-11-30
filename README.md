@@ -1,22 +1,36 @@
-# Telerik Redux Angular 2 Health App 
+# Telerik (Kendo UI) Redux Angular 2 Health App 
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 Authored by [@JeremyLikness](https://twitter.com/jeremylikness). 
 
+The intent of this project is to show a very basic use of Redux in combination with Angular 2.
+
 ## Quick start 
+
+Here are the steps to get started working locally. 
 
 ### Associate the Progress repository (requires a Telerik login)
 
+`npm login --registry=https://registry.npm.telerik.com/ --scope=@progress`
+
+The username is your login to the Telerik site. If you use an email, just enter everything before the email (i.e. foo@acme.com you will enter foo). Your full email will be prompted for as well.
+
 ### Clone the repo 
 
+`git clone https://github.com/JeremyLikness/Angular2ReduxKendoUIHealthApp.git` 
+
 ### Install dependencies 
+
+Go to the root `Angular2ReduxKendoUIHealthApp` directory.
+
+`npm install` 
 
 ### Quick run (Angular-CLI)
 
 `ng serve`
 
-### Quick run (Docker)
+### Quick run (Docker - requires Docker Linux host installed and running)
 
 This will build an image, run it, and open the browser to the running app: 
 
@@ -58,4 +72,3 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
