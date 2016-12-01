@@ -2,6 +2,8 @@
 
 ![Build Status](https://jeremylikness.visualstudio.com/_apis/public/build/definitions/94df79fc-c8e5-40dc-a66d-652d49089871/8/badge)
 
+[Demo App](http://jrldocker.cloudapp.net:8111)
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 Authored by [@JeremyLikness](https://twitter.com/jeremylikness). 
