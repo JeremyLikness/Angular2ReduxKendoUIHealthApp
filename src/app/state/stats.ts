@@ -12,6 +12,7 @@ export class Stats implements IStats, IValues {
     public heightInches: number;
     public weightPounds: number;
     public ageYears: number;
+    public bmrHistory: number[] = [];
 
     public get isMale(): boolean {
         return !this.isFemale;
@@ -37,6 +38,7 @@ stat.ageYears = 42;
 stat.heightInches = 70;
 stat.weightPounds = 215;
 stat.isFemale = false;
+stat.bmrHistory = [stat.bmr];
 
 export const DEFAULT_STAT: IStats = stat;
 

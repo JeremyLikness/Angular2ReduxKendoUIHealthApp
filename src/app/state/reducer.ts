@@ -11,19 +11,27 @@ export function statReducer<T extends IAction>(state: Stats, action: T) {
 
         case Actions.ChangeAge:
             let ageAction = <IChangeAgeAction><any>action;
-            return Object.assign(state, { ageYears: ageAction.age });
+            let newStat = Object.assign(state, { ageYears: ageAction.age });
+            newStat.bmrHistory = [...state.bmrHistory, newStat.bmr];
+            return newStat;
 
         case Actions.ChangeHeight:
             let heightAction = <IChangeHeightAction><any>action;
-            return Object.assign(state, { heightInches: heightAction.height });
+            let newHeightStat = Object.assign(state, { heightInches: heightAction.height });
+            newHeightStat.bmrHistory = [...state.bmrHistory, newHeightStat.bmr];
+            return newHeightStat;
 
         case Actions.ChangeWeight:
             let weightAction = <IChangeWeightAction><any>action;
-            return Object.assign(state, { weightPounds: weightAction.weight });
+            let newWeightStat = Object.assign(state, { weightPounds: weightAction.weight });
+            newWeightStat.bmrHistory = [...state.bmrHistory, newWeightStat.bmr];
+            return newWeightStat;
 
         case Actions.ChangeGender:
             let genderAction = <IChangeGenderAction><any>action;
-            return Object.assign(state, { isFemale: genderAction.isFemale });
+            let newGenderStat = Object.assign(state, { isFemale: genderAction.isFemale });
+            newGenderStat.bmrHistory = [...state.bmrHistory, newGenderStat.bmr];
+            return newGenderStat;
 
         default: {
             return Object.assign(new Stats(), DEFAULT_STAT);

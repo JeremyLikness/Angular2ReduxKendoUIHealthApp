@@ -36,11 +36,11 @@ describe('BmrHistoryComponent', () => {
   });
 
   it('should log the initial bmr', () => {
-    expect(component.bmrHistory[0]).toEqual(store.getState().bmr);
+    expect(component.series[0]).toEqual(store.getState().bmr);
   });
 
   it('should log changes to the store', () => {
     store.dispatch(changeAge(15));
-    expect(component.bmrHistory[1]).toEqual(store.getState().bmr);
+    expect(component.series[1]).toEqual(store.getState().bmr);
   });
 });

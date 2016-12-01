@@ -9,6 +9,7 @@ export interface IStats {
     heightInches: number;
     weightPounds: number;
     ageYears: number;
+    bmrHistory: number[];
 }
 
 export const bmiEquation = (stats: IStats) => {

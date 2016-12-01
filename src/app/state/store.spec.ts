@@ -28,6 +28,7 @@ describe('store', () => {
 
   it('should update when dispatched', () => {
       let expected = Object.assign(new Stats(), DEFAULT_STAT, { ageYears: 30 });
+      expected.bmrHistory = [...(<Stats><any>DEFAULT_STAT).bmrHistory, expected.bmr];
       statStore.dispatch(changeAge(30));
       expect(statStore.getState()).toEqual(expected);
   });

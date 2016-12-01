@@ -13,23 +13,18 @@ import { Stats } from '../state/stats';
 })
 export class BmrHistoryComponent implements OnInit {
 
-  public bmrHistory: number[] = [];
   public series: number[] = null;
   public title = 'BMR History';
 
   constructor(@Inject(STAT_STORE)private statStore: Store<Stats>) { }
 
   ngOnInit() {
-    this.bmrHistory.push(this.statStore.getState().bmr);
     this.onChanges();
-    this.statStore.subscribe(() => {
-      this.bmrHistory.push(this.statStore.getState().bmr);
-      this.onChanges();
-    });
+    this.statStore.subscribe(() => this.onChanges());
   }
 
   private onChanges() {
-    this.series = [...this.bmrHistory];
+    this.series = [...this.statStore.getState().bmrHistory];
   }
 
 }
