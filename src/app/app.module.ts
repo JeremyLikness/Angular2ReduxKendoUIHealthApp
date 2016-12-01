@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { InputsModule } from '@progress/kendo-angular-inputs';
+import { ChartsModule } from '@progress/kendo-angular-charts';
 
 import { AppComponent } from './app.component';
 import { BmrDisplayComponent } from './bmr-display/bmr-display.component';
@@ -16,6 +17,7 @@ import { HeightInputComponent } from './height-input/height-input.component';
 import { HeightTextPipe } from './height-input/height-text.pipe';
 import { WeightInputComponent } from './weight-input/weight-input.component';
 import { ThrDisplayComponent } from './thr-display/thr-display.component';
+import { BmrHistoryComponent } from './bmr-history/bmr-history.component';
 
 let statStore = makeStore();
 
@@ -30,12 +32,14 @@ let statStore = makeStore();
     HeightInputComponent,
     HeightTextPipe,
     WeightInputComponent,
-    ThrDisplayComponent
+    ThrDisplayComponent,
+    BmrHistoryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    InputsModule
+    InputsModule,
+    ChartsModule
   ],
   providers: [{provide: STAT_STORE, useValue: statStore}],
   bootstrap: [AppComponent]
