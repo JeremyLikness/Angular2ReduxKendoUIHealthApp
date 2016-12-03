@@ -18,6 +18,7 @@ describe('reducer', () => {
     });
 
     defaultStat = Object.assign(new Stats(), DEFAULT_STAT);
+    Object.freeze(defaultStat);
   });
 
   it('should handle initial state', () => {
