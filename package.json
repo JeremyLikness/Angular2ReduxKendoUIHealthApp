@@ -32,8 +32,6 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
-    "opn": "^4.0.2",
-    "opn-cli": "*",
     "@angular/compiler-cli": "^2.1.0",
     "@types/jasmine": "^2.2.30",
     "@types/node": "^6.0.42",
@@ -43,10 +41,13 @@
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
     "karma-chrome-launcher": "^2.0.0",
-    "karma-phantomjs-launcher": "^1.0.2",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
+    "karma-xml-reporter": "^0.1.4",
+    "opn": "^4.0.2",
+    "opn-cli": "*",
     "phantomjs-prebuilt": "^2.1.13",
     "protractor": "4.0.9",
     "ts-node": "1.2.1",
