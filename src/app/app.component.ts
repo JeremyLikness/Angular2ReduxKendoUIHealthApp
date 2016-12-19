@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Redux Angular 2 Example with Kendo UI';
+  title = 'Redux Angular 2 Example with KendoUI';
 }
