@@ -11,6 +11,7 @@ Authored by [@JeremyLikness](https://twitter.com/jeremylikness).
 ## Related Links
 
 * Visit the [Demo App](http://jrldocker.cloudapp.net:8111)
+* Read about [using Redux with Angular 2 and TypeScript](http://developer.telerik.com/topics/web-development/improving-state-app-redux/)
 * Learn how this project integrated [Angular 2 unit tests with Visual Studio Team Services](http://csharperimage.jeremylikness.com/2016/12/integrating-angular-2-unit-tests-with.html) 
 * Read how this project was set up for [Continuous Deployment with Visual Studio Team Services and Docker](https://ivision.com/blog/devops-docker-containers-deployment-visual-studio-team-services/)
 
